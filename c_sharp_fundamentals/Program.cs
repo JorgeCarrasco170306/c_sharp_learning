@@ -4,6 +4,10 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, Jorge!");
+        //Console.WriteLine("Hello, Jorge!");
+        //Console.WriteLine("C#");
+
+        // Strings.Run();
+        ValueTypes.Run();
     }
 }
