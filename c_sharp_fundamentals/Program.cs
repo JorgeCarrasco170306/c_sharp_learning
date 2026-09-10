@@ -9,6 +9,8 @@ internal class Program
 
         // Strings.Run();
         // ValueTypes.Run();
-        Parsing.Run();
+        // Parsing.Run();
+        // ConsoleCalculator.Run();    
+        StringFormating.Run();
     }
 }
