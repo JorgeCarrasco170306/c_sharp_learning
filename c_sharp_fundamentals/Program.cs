@@ -8,6 +8,7 @@ internal class Program
         //Console.WriteLine("C#");
 
         // Strings.Run();
-        ValueTypes.Run();
+        // ValueTypes.Run();
+        Parsing.Run();
     }
 }
