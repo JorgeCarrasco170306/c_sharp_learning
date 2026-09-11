@@ -19,7 +19,6 @@ public class TryParse
             }
             else
             {
-
                 bool equals = randomNumber == number ? true : false;
                 Console.WriteLine($"Did you guess the number? {equals} \n the random number was {randomNumber} and your answer was {number}");
             }
