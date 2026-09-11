@@ -1,19 +1,33 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace c_sharp_fundamentals.lections.DataTypes;
 
-namespace c_sharp_fundamentals.lections.DataTypes
+public class TryParse
 {
-    public interface TryParse
+    public static void Run()
     {
-        public static void Run()
+
+        Random random = new();
+        int randomNumber = random.Next(1, 11);
+
+        Console.WriteLine("Give me a number between 1 and 10");
+        bool isNumber = int.TryParse(Console.ReadLine()!, out int number);
+
+        if (isNumber)
         {
-            Console.WriteLine("Give me a number");
-            int number = int.Parse(Console.ReadLine()!);
+            if (number > 10 || number < 1)
+            {
+                Console.WriteLine($"number {number} is not in the range");
+            }
+            else
+            {
 
-
-            Console.WriteLine(number);
+                bool equals = randomNumber == number ? true : false;
+                Console.WriteLine($"Did you guess the number? {equals} \n the random number was {randomNumber} and your answer was {number}");
+            }
         }
+        else
+        {
+            Console.WriteLine($"{number} is not a number");
+        }
+
     }
 }
