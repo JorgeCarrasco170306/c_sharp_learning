@@ -1,4 +1,6 @@
-﻿namespace c_sharp_fundamentals;
+﻿using c_sharp_fundamentals.lections.DataTypes;
+
+namespace c_sharp_fundamentals;
 
 internal class Program
 {
@@ -11,6 +13,7 @@ internal class Program
         // ValueTypes.Run();
         // Parsing.Run();
         // ConsoleCalculator.Run();    
-        StringFormating.Run();
+        // StringFormating.Run();
+        TryParse.Run();
     }
 }
